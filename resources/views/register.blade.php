@@ -47,7 +47,7 @@
 
     <div class="row register-form">
         <div class="col-md-8 offset-md-2">
-            <form class="custom-form" action="/regUser" method="POST">
+            <form class="custom-form" action="s" method="POST">
                 @csrf
                 <h1 class="text-center">Register</h1>
                 <div class="form-row form-group">
