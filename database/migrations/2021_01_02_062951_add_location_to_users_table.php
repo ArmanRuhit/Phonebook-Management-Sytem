@@ -15,7 +15,7 @@ class AddLocationToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->string('location', 256)->default(null);
+            $table->string('location', 256)->nullable();
         });
     }
 

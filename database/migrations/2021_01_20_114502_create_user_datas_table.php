@@ -30,7 +30,6 @@ class CreateUserDatasTable extends Migration
             $table->string('linkedin')->nullable();
             $table->string('twitter')->nullable();
             $table->string('github')->nullable();
-            $table->string('location')->nullable();
             $table->string('sub_section')->nullable();
             $table->timestamps();
         });
