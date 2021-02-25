@@ -47,7 +47,7 @@ class RegisterController extends Controller
             'organization' => $request->organization,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'location' => null,
+            'location' => "Khulna",
         ]);
 
         return redirect('login');
