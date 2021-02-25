@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddLocationToUsersDatasTable extends Migration
+class AddLocationToUserDatasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -26,7 +26,7 @@ class AddLocationToUsersDatasTable extends Migration
      */
     public function down()
     {
-        Schema::table('users_datas', function (Blueprint $table) {
+        Schema::table('user_datas', function (Blueprint $table) {
             //
         });
     }
