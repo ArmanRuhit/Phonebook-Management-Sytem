@@ -26,7 +26,6 @@ class CreateUsersTable extends Migration
             $table->integer('hierarchy')->default(0);
             $table->boolean('verified')->default(0);
             $table->boolean('applied')->default(0);
-            $table->string('location')->nullable();
             $table->string('mobile')->nullable()->default(null);
             $table->string('facebook')->nullable()->default(null);
             $table->string('linkedin')->nullable()->default(null);
