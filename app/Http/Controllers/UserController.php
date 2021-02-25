@@ -63,8 +63,9 @@ class UserController extends Controller
         $data->save();
         $sub_domain = subdomain::where('organization', session('user.organization'))->where('sub_domain_name', $data['job title'])->get(['domain_name']);
         $new_data = new user_data;
+        return $sub_domain;
         // $new_data->sub_section = $sub_domain[0]['domain_name'];
-        $new_data->sub_section = $sub_domain['domain_name'];
+        // $new_data->sub_section = $sub_domain['domain_name'];
         $new_data->name = $data->name;
         $new_data->email = $data->email;
         $new_data->organization = $data->organization;
