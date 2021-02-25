@@ -13,7 +13,7 @@ class AddLocationToUsersDatasTable extends Migration
      */
     public function up()
     {
-        Schema::table('users_datas', function (Blueprint $table) {
+        Schema::table('user_datas', function (Blueprint $table) {
             //
             $table->string('location', 256)->nullable();
         });
